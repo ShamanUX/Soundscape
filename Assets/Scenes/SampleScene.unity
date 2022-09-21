@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 160607946}
   - component: {fileID: 160607945}
   m_Layer: 0
-  m_Name: 3D text pitch+
+  m_Name: 3D text pitch +
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1701,7 +1701,7 @@ GameObject:
   - component: {fileID: 1625519817}
   - component: {fileID: 1625519816}
   m_Layer: 0
-  m_Name: 3D text pitch-
+  m_Name: 3D text pitch -
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
