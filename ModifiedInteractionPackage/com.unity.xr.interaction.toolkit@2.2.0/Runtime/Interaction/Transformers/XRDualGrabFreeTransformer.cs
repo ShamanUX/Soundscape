@@ -124,22 +124,22 @@ namespace UnityEngine.XR.Interaction.Toolkit.Transformers
                 case XRInteractionUpdateOrder.UpdatePhase.Dynamic:
                 case XRInteractionUpdateOrder.UpdatePhase.OnBeforeRender:
                 {
-                    UpdateTarget(grabInteractable, ref targetPose);
+                    UpdateTarget(grabInteractable, ref targetPose, ref localScale);
 
                     break;
                 }
             }
         }
 
-        void UpdateTarget(XRGrabInteractable grabInteractable, ref Pose targetPose)
+        void UpdateTarget(XRGrabInteractable grabInteractable, ref Pose targetPose, ref Vector3 localScale)
         {
             if (grabInteractable.interactorsSelecting.Count == 1)
                 XRSingleGrabFreeTransformer.UpdateTarget(grabInteractable, ref targetPose);
             else
-                UpdateTargetMulti(grabInteractable, ref targetPose);
+                UpdateTargetMulti(grabInteractable, ref targetPose, ref localScale);
         }
 
-        void UpdateTargetMulti(XRGrabInteractable grabInteractable, ref Pose targetPose)
+        void UpdateTargetMulti(XRGrabInteractable grabInteractable, ref Pose targetPose, ref Vector3 localScale)
         {
             Debug.Assert(grabInteractable.interactorsSelecting.Count > 1, this);
 
@@ -258,8 +258,8 @@ namespace UnityEngine.XR.Interaction.Toolkit.Transformers
             float changeInDistance = currentControllersDistance / initialControllersDistance;
 
 
-            grabInteractable.gameObject.transform.localScale += new Vector3(initialScale.x * changeInDistance, initialScale.y * changeInDistance, initialScale.z * changeInDistance);
-            
+            localScale = new Vector3(initialScale.x * changeInDistance, initialScale.y * changeInDistance, initialScale.z * changeInDistance);
+
         }
     }
 }
