@@ -125,9 +125,9 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.interaction.toolkit": {
-      "version": "2.1.1",
+      "version": "file:../ModifiedInteractionPackage/com.unity.xr.interaction.toolkit@2.2.0",
       "depth": 0,
-      "source": "registry",
+      "source": "local",
       "dependencies": {
         "com.unity.inputsystem": "1.3.0",
         "com.unity.ugui": "1.0.0",
@@ -136,8 +136,7 @@
         "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.physics": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
+      }
     },
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.8",
