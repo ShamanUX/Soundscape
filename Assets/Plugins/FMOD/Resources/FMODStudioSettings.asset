@@ -627,9 +627,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: E:/ALTUSER/Documents/FMOD Studio/Soundscape project/Soundscape
-    project.fspro
-  sourceBankPath: E:/ALTUSER/Documents/FMOD Studio/Soundscape project/Build
+  sourceProjectPath: Assets/FMOD projects/Soundscape project/Soundscape project.fspro
+  sourceBankPath: Assets/FMOD projects/Soundscape project/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
