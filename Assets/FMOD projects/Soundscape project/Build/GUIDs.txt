@@ -1,0 +1,6 @@
+{ea9c6273-9225-4fcc-8145-833a75a3f744} bank:/Master
+{728142a7-e35e-038e-070c-09c48450f1dc} bank:/Master.strings
+{83adfc4a-d3b5-4004-b928-72551cf83900} bus:/
+{8b543269-aef6-4d31-9fd7-371db81347a1} bus:/Reverb
+{338d0df5-b164-4524-b40a-bd1cb5a8be24} event:/Drum loop
+{f925fce5-3a95-47e6-a1e3-b0c48b1c7b4f} parameter:/pitch
