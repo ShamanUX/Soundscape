@@ -12,6 +12,8 @@ public class SetPitchParameter : MonoBehaviour
     [SerializeField] [Range(0f,10f)]
     public float pitch;
 
+    public float number;
+
 
     // Start is called before the first frame update
     void Start()
