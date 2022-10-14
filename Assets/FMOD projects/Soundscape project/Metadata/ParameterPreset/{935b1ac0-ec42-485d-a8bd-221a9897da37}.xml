@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{935b1ac0-ec42-485d-a8bd-221a9897da37}">
+		<property name="name">
+			<value>pitch</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5471f857-7c87-4036-9ee2-c175f4c55668}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f925fce5-3a95-47e6-a1e3-b0c48b1c7b4f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f925fce5-3a95-47e6-a1e3-b0c48b1c7b4f}">
+		<property name="maximum">
+			<value>10</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
