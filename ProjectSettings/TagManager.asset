@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DrumStick
   - Playable
+  - DrumStick_2
   layers:
   - Default
   - TransparentFX
