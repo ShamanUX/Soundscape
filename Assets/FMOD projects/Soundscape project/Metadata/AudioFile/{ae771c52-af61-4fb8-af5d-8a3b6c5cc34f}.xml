@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ae771c52-af61-4fb8-af5d-8a3b6c5cc34f}">
+		<property name="assetPath">
+			<value>A2 8th 120 bpm.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.12498866213151927</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dad313c1-2b52-482c-9419-e20da42c06ac}</destination>
+		</relationship>
+	</object>
+</objects>

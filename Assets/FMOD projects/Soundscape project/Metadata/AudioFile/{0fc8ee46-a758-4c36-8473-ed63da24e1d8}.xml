@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0fc8ee46-a758-4c36-8473-ed63da24e1d8}">
+		<property name="assetPath">
+			<value>G3 8th 120 bpm.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.12498866213151927</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dad313c1-2b52-482c-9419-e20da42c06ac}</destination>
+		</relationship>
+	</object>
+</objects>
