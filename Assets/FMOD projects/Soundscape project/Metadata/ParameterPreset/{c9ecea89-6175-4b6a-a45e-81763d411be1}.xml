@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{c9ecea89-6175-4b6a-a45e-81763d411be1}">
+		<property name="name">
+			<value>G3IsActive</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5471f857-7c87-4036-9ee2-c175f4c55668}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{fce267b2-ab2a-446d-9f03-4f3eb3ca3a43}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{fce267b2-ab2a-446d-9f03-4f3eb3ca3a43}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

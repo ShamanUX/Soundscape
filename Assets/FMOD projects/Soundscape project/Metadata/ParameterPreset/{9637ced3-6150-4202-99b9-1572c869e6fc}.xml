@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{9637ced3-6150-4202-99b9-1572c869e6fc}">
+		<property name="name">
+			<value>A3IsActive</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5471f857-7c87-4036-9ee2-c175f4c55668}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f4ed8dfc-335b-40c2-8b14-a8a500225e82}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f4ed8dfc-335b-40c2-8b14-a8a500225e82}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>50</value>
+		</property>
+		<property name="seekSpeedDescending">
+			<value>0.2800000011920929</value>
+		</property>
+	</object>
+</objects>
