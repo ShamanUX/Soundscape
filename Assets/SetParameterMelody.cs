@@ -12,13 +12,19 @@ public class SetParameterMelody : SetFMODParameter
 
     private void Awake()
     {
-        synthCube = GameObject.Find("Synth Cube");
+        
     }
+    
 
     // Start is called before the first frame update
     void Start()
     {
         
+        
+    }
+
+    private void OnEnable()
+    {
         instance = targetEventEmitter.EventInstance;
     }
 

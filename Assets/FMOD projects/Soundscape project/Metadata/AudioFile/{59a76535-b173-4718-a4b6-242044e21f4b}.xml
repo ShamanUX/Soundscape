@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{59a76535-b173-4718-a4b6-242044e21f4b}">
+		<property name="assetPath">
+			<value>PL_TH1_01_Open_Hat_Sample.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dad313c1-2b52-482c-9419-e20da42c06ac}</destination>
+		</relationship>
+	</object>
+</objects>
