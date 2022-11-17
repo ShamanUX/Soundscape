@@ -46,6 +46,8 @@ public class SetParameterByStretch : MonoBehaviour
 
         instance = emitter.EventInstance;
 
+        gameObject.GetComponent<SetLPFilterParameter>().UpdateInstance();
+
     }
 
 
