@@ -25,6 +25,13 @@ public class SetParameterMelody : SetFMODParameter
     // Update is called once per frame
     void Update()
     {
+        float isNoteActive;
+        instance.getParameterByName(parameterName, out isNoteActive); ;
+
+        if (isNoteActive == 1)
+        {
+            gameObject.GetComponent<AnimateColour>().HitTriggered();
+        }
 
         //If synth cube is disabled, stop playing all sounds
         if ( synthCube.activeSelf == false)
@@ -36,6 +43,8 @@ public class SetParameterMelody : SetFMODParameter
     private void OnTriggerEnter(Collider other)
     {
         instance.setParameterByName(parameterName, 1);
+
+        
     }
 
     private void OnTriggerExit(Collider other)
