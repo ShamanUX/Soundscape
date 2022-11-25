@@ -39,8 +39,6 @@ public class SetLPFilterParameter : SetFMODParameter
 
         valueByDistance = pillowDistance * distanceModifier;
 
-        Debug.Log("valuebyDistance: " + valueByDistance + " --- pillowDistance: " + pillowDistance);
-
         // LPFilter parameter values range from 0 to 50, where 50 
         // means no effect and 0 means most effect of LPFilter.
         instance.setParameterByName(parameterName, valueByDistance);
