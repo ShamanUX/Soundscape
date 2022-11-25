@@ -7,6 +7,7 @@ public class SetFMODParameter : MonoBehaviour
 
     public FMODUnity.StudioEventEmitter targetEventEmitter;
 
+
     public string parameterName;
     
 }

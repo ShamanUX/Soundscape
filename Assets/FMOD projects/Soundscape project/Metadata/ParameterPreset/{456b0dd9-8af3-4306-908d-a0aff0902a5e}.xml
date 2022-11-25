@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{456b0dd9-8af3-4306-908d-a0aff0902a5e}">
+		<property name="name">
+			<value>LPFilter</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5471f857-7c87-4036-9ee2-c175f4c55668}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{70c78abc-85eb-4be4-a1dd-1d2d929cbc2f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{70c78abc-85eb-4be4-a1dd-1d2d929cbc2f}">
+		<property name="maximum">
+			<value>50</value>
+		</property>
+		<property name="initialValue">
+			<value>50</value>
+		</property>
+	</object>
+</objects>
