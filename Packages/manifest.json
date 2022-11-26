@@ -12,6 +12,7 @@
     "com.unity.xr.interaction.toolkit": "file:../ModifiedInteractionPackage/com.unity.xr.interaction.toolkit@2.2.0",
     "com.unity.xr.management": "4.2.1",
     "com.unity.xr.oculus": "1.12.1",
+    "de.thirteenpixels.gitmerge": "https://github.com/FlaShG/GitMerge-for-Unity.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
