@@ -16,8 +16,8 @@ public class PlayInstrument : MonoBehaviour
 
     private void OnDestroy()
     {
-        playInstrumentReference.action.started += Hold;
-        playInstrumentReference.action.canceled += Release;
+        playInstrumentReference.action.started -= Hold;
+        playInstrumentReference.action.canceled -= Release;
     }
 
     // Start is called before the first frame update

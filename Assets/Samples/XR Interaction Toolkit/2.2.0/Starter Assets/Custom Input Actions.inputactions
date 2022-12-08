@@ -19,7 +19,7 @@
                 {
                     "name": "",
                     "id": "60fdef08-a2a5-449c-af81-70b628aa7b29",
-                    "path": "<OculusTouchController>/start",
+                    "path": "<OculusTouchController>{LeftHand}/start",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

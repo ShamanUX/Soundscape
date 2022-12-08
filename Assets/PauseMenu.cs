@@ -6,23 +6,32 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    public InputActionReference pauseReference;
+
     public GameObject wristUI;
-    public bool activeWristUI = true;
+    public bool activeWristUI = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        DisplaywristUI();
+        wristUI.SetActive(false);
 
     }
 
-    public void MenuPressed(InputAction.CallbackContext context)
+
+    private void Awake()
     {
-        if (context.performed) DisplaywristUI();
+        pauseReference.action.performed += DisplaywristUI;
     }
 
-    public void DisplaywristUI()
+    private void OnDestroy()
+    {
+        pauseReference.action.performed -= DisplaywristUI;
+    }
+
+
+    public void DisplaywristUI(InputAction.CallbackContext context)
     {
         if (activeWristUI)
         {
