@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3c23ee59-7b18-4bc5-900e-591e35d29c46}">
+		<property name="assetPath">
+			<value>Acoustic Open Hat 12.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.81861678004535143</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dad313c1-2b52-482c-9419-e20da42c06ac}</destination>
+		</relationship>
+	</object>
+</objects>
