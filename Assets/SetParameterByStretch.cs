@@ -5,14 +5,12 @@ using UnityEngine;
 public class SetParameterByStretch : MonoBehaviour
 {
     public static float initialVolume = 5;
+    float initialScale;
+    float newVolume;
 
     FMOD.Studio.EventInstance instance;
 
-    float initialScale;
-
     UnityEngine.UI.Text volumeIndicator;
-
-    float newVolume;
 
     // Start is called before the first frame update
     void Start()
@@ -30,14 +28,10 @@ public class SetParameterByStretch : MonoBehaviour
             float volume = initialVolume * (transform.localScale.magnitude / initialScale);
             instance.setParameterByName("volume", volume);
             
-            
-            instance.getParameterByName("volume", out newVolume );
+            instance.getParameterByName("volume", out newVolume);
             volumeIndicator.text = "Volume: " + newVolume;
         }
     }
-
-   
-
 
     // OnTriggerEnter runs when this stretch cube enters the PlayCube area.
     private void OnTriggerEnter(Collider other)
@@ -49,6 +43,4 @@ public class SetParameterByStretch : MonoBehaviour
         gameObject.GetComponent<SetLPFilterParameter>().UpdateInstance();
 
     }
-
-
 }
