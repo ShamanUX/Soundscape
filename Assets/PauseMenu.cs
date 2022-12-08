@@ -11,12 +11,13 @@ public class PauseMenu : MonoBehaviour
     public GameObject wristUI;
     public bool activeWristUI = false;
 
+    public GameObject melodyStation;
+
 
     // Start is called before the first frame update
     void Start()
     {
         wristUI.SetActive(false);
-
     }
 
 
@@ -29,7 +30,6 @@ public class PauseMenu : MonoBehaviour
     {
         pauseReference.action.performed -= DisplaywristUI;
     }
-
 
     public void DisplaywristUI(InputAction.CallbackContext context)
     {
@@ -53,5 +53,10 @@ public class PauseMenu : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void ToggleMelodyStation()
+    {
+        melodyStation.SetActive(!melodyStation.activeSelf);
     }
 }

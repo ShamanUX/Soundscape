@@ -21,7 +21,7 @@ public class FMODloudness : MonoBehaviour
     FMOD.DSP dsp;
     FMOD.DSP_METERING_INFO dspInfo;
 
-    public GameObject speaker;
+    public GameObject[] speaker;
 
     // Start is called before the first frame update
     void Start()
@@ -49,23 +49,25 @@ public class FMODloudness : MonoBehaviour
         if (animationLerpCurrentValue > avgLevel)
         {
             //Keep lerping
-            
-            speaker.transform.localScale = Vector3.one * animationLerpCurrentValue;
+            foreach(GameObject _speaker in speaker)
+            {
+                _speaker.transform.localScale = Vector3.one * animationLerpCurrentValue;
+            }
             animationLerpTimer += Time.deltaTime * 2f;
             animationLerpCurrentValue = Mathf.Lerp(animationLerpStartValue, minLevel, animationLerpTimer);
-
 
         } else
         {
             float clampedVolume = Mathf.Clamp(avgLevel, minLevel, maxLevel);
-            speaker.transform.localScale = Vector3.one * clampedVolume;
 
+            foreach (GameObject _speaker in speaker)
+            {
+                _speaker.transform.localScale = Vector3.one * clampedVolume;
+            }
+                
             animationLerpStartValue = clampedVolume;
             animationLerpCurrentValue = clampedVolume;
             animationLerpTimer = 0;
         }
-
-        
     }
-
 }
