@@ -1217,6 +1217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gem emerald
       objectReference: {fileID: 0}
+    - target: {fileID: 6377095638888631484, guid: 4d756bd98f71edd40ab529dc22e7c2dd, type: 3}
+      propertyPath: m_TagString
+      value: MelodyGem
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d756bd98f71edd40ab529dc22e7c2dd, type: 3}
 --- !u!1001 &482969578
@@ -1655,6 +1659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gem scarlet (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6310658801647082346, guid: 78f5751fb53cbeb409bdd416c3af1cec, type: 3}
+      propertyPath: m_TagString
+      value: MelodyGem
+      objectReference: {fileID: 0}
     - target: {fileID: 6690139106022621648, guid: 78f5751fb53cbeb409bdd416c3af1cec, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2055,6 +2063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalColor: {r: 0, g: 0, b: 0, a: 0}
+  originalEmissionColor: {r: 0, g: 0, b: 0, a: 0}
   testAnimation: 0
   t: 0
 --- !u!114 &979366608
@@ -2141,6 +2150,10 @@ PrefabInstance:
     - target: {fileID: 4837214974316501917, guid: 603b661306a4918438e9ff71ac6c7609, type: 3}
       propertyPath: m_Name
       value: gem azure
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837214974316501917, guid: 603b661306a4918438e9ff71ac6c7609, type: 3}
+      propertyPath: m_TagString
+      value: MelodyGem
       objectReference: {fileID: 0}
     - target: {fileID: 5218244593403134247, guid: 603b661306a4918438e9ff71ac6c7609, type: 3}
       propertyPath: m_RootOrder
@@ -2593,6 +2606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalColor: {r: 0, g: 0, b: 0, a: 0}
+  originalEmissionColor: {r: 0, g: 0, b: 0, a: 0}
   testAnimation: 0
   t: 0
 --- !u!114 &1164530832
@@ -3092,6 +3106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalColor: {r: 0, g: 0, b: 0, a: 0}
+  originalEmissionColor: {r: 0, g: 0, b: 0, a: 0}
   testAnimation: 0
   t: 0
 --- !u!114 &1358215228
@@ -3707,6 +3722,10 @@ PrefabInstance:
     - target: {fileID: 6310658801647082346, guid: 78f5751fb53cbeb409bdd416c3af1cec, type: 3}
       propertyPath: m_Name
       value: gem scarlet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310658801647082346, guid: 78f5751fb53cbeb409bdd416c3af1cec, type: 3}
+      propertyPath: m_TagString
+      value: MelodyGem
       objectReference: {fileID: 0}
     - target: {fileID: 6690139106022621648, guid: 78f5751fb53cbeb409bdd416c3af1cec, type: 3}
       propertyPath: m_RootOrder
@@ -4567,6 +4586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalColor: {r: 0, g: 0, b: 0, a: 0}
+  originalEmissionColor: {r: 0, g: 0, b: 0, a: 0}
   testAnimation: 0
   t: 0
 --- !u!114 &1866752262
@@ -9535,6 +9555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalColor: {r: 0, g: 0, b: 0, a: 0}
+  originalEmissionColor: {r: 0, g: 0, b: 0, a: 0}
   testAnimation: 0
   t: 0
 --- !u!114 &1943425886
@@ -14407,6 +14428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalColor: {r: 0, g: 0, b: 0, a: 0}
+  originalEmissionColor: {r: 0, g: 0, b: 0, a: 0}
   testAnimation: 0
   t: 0
 --- !u!114 &2012196727
@@ -14620,6 +14642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gem
       objectReference: {fileID: 0}
+    - target: {fileID: 6835881501892438045, guid: 0c9bfa13759367a47b37b7d5e0d5b655, type: 3}
+      propertyPath: m_TagString
+      value: MelodyGem
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c9bfa13759367a47b37b7d5e0d5b655, type: 3}
 --- !u!33 &266540644026539600
@@ -14703,6 +14729,7 @@ GameObject:
   - component: {fileID: 7459635345204112211}
   - component: {fileID: 1134726726814273360}
   - component: {fileID: 1134726726814273359}
+  - component: {fileID: 1134726726814273361}
   m_Layer: 0
   m_Name: HiHat plate
   m_TagString: Untagged
@@ -14770,6 +14797,22 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1134726726814273361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134726726814273358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b43a7aa1506d8e4ba46f1f591cc0696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  originalEmissionColor: {r: 0.6509434, g: 0.26099145, b: 0.26099145, a: 0}
+  testAnimation: 0
+  t: 0
 --- !u!65 &1371224975310551817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15920,6 +15963,7 @@ GameObject:
   - component: {fileID: 6299501601675964242}
   - component: {fileID: 4564110650285525841}
   - component: {fileID: 4564110650285525840}
+  - component: {fileID: 4564110650285525842}
   m_Layer: 0
   m_Name: KickDrum plate
   m_TagString: Untagged
@@ -15987,6 +16031,22 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &4564110650285525842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4564110650285525839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b43a7aa1506d8e4ba46f1f591cc0696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  originalEmissionColor: {r: 0, g: 0, b: 0, a: 0}
+  testAnimation: 0
+  t: 0
 --- !u!33 &4692252401934796899
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16111,7 +16171,7 @@ GameObject:
   - component: {fileID: 1164530832}
   m_Layer: 0
   m_Name: gem scarlet (2)
-  m_TagString: Untagged
+  m_TagString: MelodyGem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16671,6 +16731,7 @@ GameObject:
   - component: {fileID: 1567420533841967457}
   - component: {fileID: 9077622472818515326}
   - component: {fileID: 9077622472818515325}
+  - component: {fileID: 9077622472818515327}
   m_Layer: 0
   m_Name: Snare plate
   m_TagString: Untagged
@@ -16738,3 +16799,19 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &9077622472818515327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9077622472818515324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b43a7aa1506d8e4ba46f1f591cc0696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  originalEmissionColor: {r: 0, g: 0, b: 0, a: 0}
+  testAnimation: 0
+  t: 0

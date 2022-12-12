@@ -7,6 +7,7 @@ TagManager:
   - DrumStick
   - Playable
   - DrumStick_2
+  - MelodyGem
   layers:
   - Default
   - TransparentFX

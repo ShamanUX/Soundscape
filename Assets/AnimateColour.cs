@@ -9,6 +9,8 @@ public class AnimateColour : MonoBehaviour
 
     public Color originalColor;
 
+    public Color originalEmissionColor;
+
     public bool testAnimation;
 
     public float t = 0;
@@ -18,6 +20,12 @@ public class AnimateColour : MonoBehaviour
     {
         myMaterial = gameObject.GetComponent<Renderer>().material;
         originalColor = myMaterial.color;
+
+        if (gameObject.tag != "MelodyGem" )
+        {
+            originalEmissionColor = myMaterial.GetColor("_EmissionColor");
+        }
+        
         
     }
 
@@ -33,12 +41,28 @@ public class AnimateColour : MonoBehaviour
 
         if (t > 0)
         {
-            myMaterial.color = Color.Lerp(originalColor, Color.white, t);
+            if (gameObject.tag == "MelodyGem")
+            {
+                myMaterial.color = Color.Lerp(originalColor, Color.white, t);
+            } else
+            {
+                myMaterial.SetColor("_EmissionColor", Color.Lerp(originalEmissionColor, Color.white, t));
+            }
+            
             t -= Time.deltaTime * 2;
             
         } else if (t <= 0)
         {
-            myMaterial.color = originalColor;
+            
+
+            if (gameObject.tag == "MelodyGem")
+            {
+                myMaterial.color = originalColor;
+            } else
+            {
+                myMaterial.SetColor("_EmissionColor", originalEmissionColor);
+            }
+            
         }
 
 
@@ -49,6 +73,14 @@ public class AnimateColour : MonoBehaviour
     public void HitTriggered()
     {
         t = 1;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (gameObject.tag != "MelodyGem")
+        {
+            HitTriggered();
+        }
     }
 
 }
