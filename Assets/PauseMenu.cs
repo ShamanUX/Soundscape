@@ -13,11 +13,14 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject melodyStation;
 
+    public GameObject Guide;
+
 
     // Start is called before the first frame update
     void Start()
     {
         wristUI.SetActive(false);
+        Guide.SetActive(false);
     }
 
 
@@ -58,5 +61,10 @@ public class PauseMenu : MonoBehaviour
     public void ToggleMelodyStation()
     {
         melodyStation.SetActive(!melodyStation.activeSelf);
+    }
+
+    public void ShowGuide()
+    {
+        Guide.SetActive(!Guide.activeSelf);
     }
 }
