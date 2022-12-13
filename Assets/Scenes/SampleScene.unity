@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.35971153, g: 0.27013448, b: 0.5941514, a: 1}
+  m_IndirectSpecularColor: {r: 0.35971078, g: 0.2701334, b: 0.59415126, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1500,10 +1500,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Use grab to take a drum stick and hit the drums.
+  m_Text: 'Interact with the instruments and objects to create or manipulate sounds.
 
-    Move the pillow
-    to muffle the sounds.
 
 '
 --- !u!222 &624168504
@@ -4541,7 +4539,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Guide
+  m_Text: Info
 --- !u!222 &1909325673
 CanvasRenderer:
   m_ObjectHideFlags: 0
