@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerMaster" id="{83adfc4a-d3b5-4004-b928-72551cf83900}">
-		<property name="note" />
 		<property name="name">
 			<value>Master Bus</value>
 		</property>
@@ -17,12 +16,33 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{44f66ffa-1647-44e5-a6e0-9838561bb1e0}">
 		<relationship name="effects">
+			<destination>{aeba9c63-c059-4cab-99ae-22ea19a6707a}</destination>
 			<destination>{e9b184cf-2426-409d-b694-91d0041b65a7}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{35d656f4-11b9-4adb-b88e-0f3715869f28}">
 		<property name="overridingOutputFormat">
 			<value>2</value>
+		</property>
+	</object>
+	<object class="SFXReverbEffect" id="{aeba9c63-c059-4cab-99ae-22ea19a6707a}">
+		<property name="decayTime">
+			<value>1600</value>
+		</property>
+		<property name="earlyDelay">
+			<value>11</value>
+		</property>
+		<property name="lateDelay">
+			<value>63</value>
+		</property>
+		<property name="HFDecayRatio">
+			<value>48.5</value>
+		</property>
+		<property name="lowShelfGain">
+			<value>-8</value>
+		</property>
+		<property name="highCut">
+			<value>1450</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{e9b184cf-2426-409d-b694-91d0041b65a7}" />
